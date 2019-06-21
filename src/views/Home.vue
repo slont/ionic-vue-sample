@@ -1,18 +1,31 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="home" class="ion-page">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Home</ion-title>
+      </ion-toolbar>
+      <ion-toolbar>
+        <ion-title>Home Subheader</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <figure>
+        <img alt="Vue logo" src="../assets/logo.png">
+      </figure>
+      <div>
+        <router-link to="/about">Open About Page</router-link>
+      </div>
+    </ion-content>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'home',
-  components: {
-    HelloWorld
+<style lang="scss">
+  #home {
+    ion-header ion-toolbar {
+      color: white;
+      --background: var(--ion-color-dark-tint)
+    }
   }
-}
-</script>
+</style>
+
