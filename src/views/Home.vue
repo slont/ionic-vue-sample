@@ -14,7 +14,7 @@
         <img alt="Vue logo" src="../assets/logo.png">
       </figure>
       <div>
-        <router-link to="/about">Open About Page</router-link>
+        <router-link to="/about" tag="ion-button">Go To About Page</router-link>
       </div>
     </ion-content>
   </div>
